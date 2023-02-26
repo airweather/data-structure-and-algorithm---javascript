@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <form id="app">
+      <input type="text" id="data"/>
+      <button>Calc</button>
+    </form>
+
+    <span id="result"></span>
+  </div>
+</body>
+
+<script>
+  const $app = document.querySelector('#app');
+  const $result = document.querySelector('#result');
+  
+  const func = (e) => {
+    e.preventDefault();
+    const data = document.querySelector('#data').value;
+    // const result = reverse(data);
+    const result = bubbleSort(data);
+    $result.innerText = result;
+  }
+
+  $app.addEventListener('submit', func);
+
+  const reverse = (data) => {
+    const text = data;
+    // const arr = [];
+    let reverse = '';
+    for(let i=0;i<text.length;i++) {
+      // arr.push(text[text.length - (i+1)]);
+      reverse += text[text.length - (i+1)];
+    }
+    // return arr.join('');
+    return reverse;
+  }
+
+  const bubbleSort = (data) => {
+    const arr = [];
+    const repeat = data.length;
+    for(let i=0;i<repeat;i++) {
+      arr.push(parseInt(data[i]));
+    }
+    for(let i=0;i<repeat;i++) {
+      for(let j=0;j<repeat;j++) {
+        if(arr[i] < arr[j]) {
+          let temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+        }
+      }
+    }
+
+    return arr.join('');
+  }
+  
+</script>
+</html>
