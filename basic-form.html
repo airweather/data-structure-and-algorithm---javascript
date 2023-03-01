@@ -17,13 +17,10 @@
   </div>
 </body>
 
-<!-- <script type="module">
-  import { bubbleSort } from './sort/bubbleSort.js'
-
-</script> -->
-
 <script src="./reverse.js"></script>
-<script>
+
+<script type="module">
+  import { bubbleSort } from './sort/bubbleSort.js'
   
   const $app = document.querySelector('#app');
   const $result = document.querySelector('#result');
@@ -31,8 +28,8 @@
   const func = (e) => {
     e.preventDefault();
     const data = document.querySelector('#data').value;
-    const result = reverse(data);
-    // const result = bubbleSort(data);
+    // const result = reverse(data);
+    const result = bubbleSort(data);
     $result.innerText = result;
   }
 
