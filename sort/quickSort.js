@@ -14,3 +14,5 @@ const quickSort = (arr) => {
   }
   return [...quickSort(left), pivot, ...quickSort(right)];
 }
+
+export default quickSort;
