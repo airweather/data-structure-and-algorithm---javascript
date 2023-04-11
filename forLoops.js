@@ -17,3 +17,6 @@ numberArr.reduce((acc, cur) => {
     console.log(acc, cur);
     return acc + cur;
 }, 0);
+
+//concat은 배열을 합쳐준다.
+console.log(numberArr.concat([11, 12, 13, 14, 15]));
