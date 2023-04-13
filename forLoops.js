@@ -20,3 +20,11 @@ numberArr.reduce((acc, cur) => {
 
 //concat은 배열을 합쳐준다.
 console.log(numberArr.concat([11, 12, 13, 14, 15]));
+
+//find는 조건에 맞는 첫번째 요소를 반환한다.
+const findFunc = arr.find((item, i) => {
+    console.log(item, i);
+    return item === 'apple?' || item === 'banana';
+});
+
+console.log(findFunc);
