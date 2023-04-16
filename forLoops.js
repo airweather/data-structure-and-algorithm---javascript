@@ -28,3 +28,9 @@ const findFunc = arr.find((item, i) => {
 });
 
 console.log(findFunc);
+
+//Object 에 값 추가
+const obj = { a: 1, b: 2, c: 3 };
+
+console.log(obj);
+
