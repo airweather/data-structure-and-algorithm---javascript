@@ -6,3 +6,9 @@ console.log(a & b); // 0
 
 // bitwise OR
 console.log(a | b); // 7
+
+// bitwise XOR
+console.log(a ^ b); // 7
+
+// bitwise NOT
+console.log(~a); // -6
