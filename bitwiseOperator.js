@@ -12,3 +12,9 @@ console.log(a ^ b); // 7
 
 // bitwise NOT
 console.log(~a); // -6
+
+// left shift
+console.log(a << b); // 20
+
+// right shift
+console.log(a >> b); // 1
