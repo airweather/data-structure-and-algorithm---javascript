@@ -19,12 +19,14 @@ console.log(a << b); // 20
 // right shift
 console.log(a >> b); // 1
 
+// right shift
 console.log( a>>1); // 2
 console.log( a>>2); // 1
 console.log( a>>3); // 0
 console.log( a>>4); // 0
 console.log( a>>5); // 0
 
+// left shift
 console.log( a<<1); // 10
 console.log( a<<2); // 20
 console.log( a<<3); // 40
