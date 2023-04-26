@@ -15,3 +15,8 @@ const obj2 = { f: 6, g: 7 };
 Object.assign(obj, obj2);
 
 console.log('assign : ',obj);
+
+//Object 에서 값 삭제
+delete obj.a;
+
+console.log('delete : ',obj);
