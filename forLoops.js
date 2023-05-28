@@ -35,4 +35,18 @@ const obj = { a: 1, b: 2, c: 3 };
 console.log(obj);
 
 
+//Some은 조건에 맞는 요소가 하나라도 있으면 true를 반환한다.
+const someFunction = numberArr.some((item, i) => {
+    // console.log(item, i);
+    return item === 5;
+});
 
+console.log(someFunction);
+
+//Every는 모든 요소가 조건에 맞아야 true를 반환한다.
+const everyFunction = numberArr.every((item, i) => {
+    // console.log(item, i);
+    return item === 5;
+});
+
+console.log(everyFunction);
